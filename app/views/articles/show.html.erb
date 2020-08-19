@@ -1,0 +1,6 @@
+<%= render 'header' %>
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+<div><%= link_to 'Back to list', articles_path %></div>
+<div><%= link_to 'Edit this article', edit_article_path(@article) %></div>
+

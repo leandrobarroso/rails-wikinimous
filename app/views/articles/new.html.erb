@@ -1,0 +1,10 @@
+<%= render 'header' %>
+<h1>Add new article</h1>
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+<div><%= link_to 'Back to list', articles_path %></div>
